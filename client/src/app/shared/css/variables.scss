@@ -1,0 +1,46 @@
+// COLORS
+$black: #333333;
+$dark-gray: #666666;
+$gray: #999999;
+$light-gray: #EEEEEE;
+$light-blue: #3483FA;
+$ml-yellow: #FFE600;
+
+// MARGINS AND PADDINGS
+$small-space: 16px;
+$large-space: 32px;
+
+// FONT SIZES
+$standard-font-size: 16px;
+$title-thumbnail-font-size: 18px;
+$price-thumbnail-font-size: 24px;
+$title-card-font-size: 24px;
+$price-card-font-size: 46px;
+$h2-card-font-size: 18px;
+
+// WIDTHS AND HEIGHTS
+$main-container-width: 80%;
+
+// MARGINS AND PADDINGS
+$main-container-margin: 0 auto;
+
+// RADIUS
+$border-radius-2: 2px;
+$border-radius-4: 4px;
+
+// MENSAJES Y ALERTAS
+.pill-message {
+    margin: $large-space 0;
+    padding: $large-space;
+    border-radius: $border-radius-4;
+    box-shadow: 0 0 1px #c9c9c9;
+    &.info {
+        border: 1px solid #c0c0c0;
+        background-color:#fff77a;
+    }
+    &.danger {
+        border: 1px solid #992824;
+        background-color:#d34540;
+        color: #fff;
+    }
+}

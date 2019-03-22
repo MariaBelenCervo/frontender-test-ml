@@ -1,0 +1,20 @@
+{
+    "name": "ml-test-app",
+    "version": "1.0.0",
+    "description": "React + Express App for ML",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index",
+        "server-install": "npm install",
+        "client-install": "cd client && npm install",
+        "build-app": "cd client && npm run build",
+        "install-all": "npm run server-install && npm run client-install && npm run build-app"
+    },
+    "author": "Maria Belen Cervo",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.16.4",
+        "node-fetch": "^2.3.0"
+    }
+}

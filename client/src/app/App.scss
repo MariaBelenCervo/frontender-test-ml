@@ -1,0 +1,6 @@
+@import './shared/css/variables.scss';
+
+main {
+    width: $main-container-width;
+    margin: $main-container-margin;
+}

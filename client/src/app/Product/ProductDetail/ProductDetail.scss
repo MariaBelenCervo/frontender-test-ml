@@ -1,0 +1,76 @@
+@import '../../shared/css/variables.scss';
+
+#product-detail {
+    .main-content {
+        width: 60%;
+        margin: 16px;
+        .image-content {
+            border-radius: $border-radius-4;
+            img {
+                width: 100%;
+            }
+        }
+        .description {
+            h2 {
+                margin: 32px 0;
+                font-weight: 700;
+                font-size: $h2-card-font-size;
+            }
+            p {
+                margin: 32px 0;
+                font-size: $standard-font-size;
+            }
+        }
+    }
+    .details {
+        margin: 16px;
+        width: 40%;
+        dl {
+            font-size: 14px;
+        }
+        header, p {
+            padding: 16px 0;
+        }
+        header {
+            font-size: $title-card-font-size;
+            font-weight: 700;
+        }
+        p {
+            font-size: $price-card-font-size;
+            .decimal {
+                font-size: .5em;
+                vertical-align:super;
+            }
+        }
+        button {
+            margin: 16px 0;
+            padding: 16px;
+            background-color: $light-blue;
+            width: 100%;
+            border: none;
+            font-size: $standard-font-size;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    #product-detail {
+        .details, .main-content {
+            width: 50%;
+            min-width: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #product-detail {
+        .details {
+            width: 30%;
+        }
+        .main-content {
+            width: 70%;
+        }
+    }
+}

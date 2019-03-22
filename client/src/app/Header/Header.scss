@@ -1,0 +1,26 @@
+@import '../shared/css/variables.scss';
+
+#main-header {
+    background-color: $ml-yellow;
+    nav {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 12px 0;
+        width: $main-container-width;
+        margin: $main-container-margin;
+        .logo {
+            background: url('./images/logo_ml.png') no-repeat;
+            display: inline-block;
+            margin-right: 24px;
+            a {
+                width: 53px;
+                height: 36px;    
+                display: block;
+            }
+        }
+        h1 span {
+            display: none;
+        }
+    }
+}

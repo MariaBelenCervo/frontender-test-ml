@@ -1,0 +1,60 @@
+@import '../../shared/css/variables.scss';
+
+#items-list {
+    background-color:#fff;
+    border:1px solid transparent;
+    border-radius: $border-radius-2;
+    padding: 2px 16px;
+    li {
+        display: flex;
+        padding: 16px 0;
+        &:not(:last-of-type) {
+            border-bottom: 1px solid $light-gray;
+        }
+        .image-content {
+            min-width: 180px;
+            height: 180px;
+            overflow: hidden;
+            border-radius: $border-radius-4;
+            text-align: center;
+            img {
+                width: 100%;
+            }
+        }
+        .item-info {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+            .item-details {
+                padding: $small-space;
+                .price {
+                    font-size: $price-thumbnail-font-size;
+                }
+                .shipping {
+                    display: none;
+                    background: #1ed760 url('./images/ic_shipping.png') no-repeat;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    margin: 0 12px;
+                    &.active {
+                        display: inline-block;
+                    }
+                }
+                h2 {
+                    margin: $small-space 0;
+                    a {
+                        color: $black;
+                        font-size: $title-thumbnail-font-size;
+                    }
+                }
+            }
+            .item-address {
+                font-size: 12px;
+                padding: $small-space 0;
+                min-width: 120px;
+                color: $dark-gray;
+            }
+        }
+    }
+}

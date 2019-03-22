@@ -1,0 +1,26 @@
+@import '../css/variables.scss';
+
+#breadcrumb {
+    ol {
+        padding: 12px 0;
+        list-style: none;
+        background-color: #eee;
+        li {
+            display: inline;
+            font-size: 14px;
+            &+li:before {
+                padding: 8px;
+                color: $gray;
+                content: ">\00a0";
+            }
+            a {
+                color: $gray;
+                text-decoration: none;
+                &:hover {
+                    color: $dark-gray;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
